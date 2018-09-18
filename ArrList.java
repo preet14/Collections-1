@@ -17,9 +17,10 @@ class Test12
     {
         if(index==size-1)
         {
-            this.size=this.size*2;
+            this.size=size+(size*(3/2));
+            System.out.println(this.size);
             int temp[]=arr;
-            arr=new int[size+(size*(3/2))];
+            arr=new int[size];
             for(int i=0;i<=index;i++)
             {
                 arr[i]=temp[i];
@@ -119,8 +120,8 @@ public class ArrList
       obj.print();
       System.out.println("After reverse : ");
       
-      obj.reverse();
-      obj.print();
+      //obj.reverse();
+      //obj.print();
       //  obj.deleteAll(); use this to delete all elements of ArrayList
   }
 }
